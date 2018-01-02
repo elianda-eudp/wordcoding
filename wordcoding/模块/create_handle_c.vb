@@ -134,10 +134,11 @@ Sub create_handle_c(ByVal value)
         '        Next i
         REM 打开远程下载到的文件
 
+        MsgBox(docpath & "remote_host\" & program.program_english_name & "_handle" & ".c")
         handle_file = CreateObject("Scripting.FileSystemObject")
         On Error GoTo coin_bow
 
-        s_file = handle_file.GetFile(docpath & "\src\remote_host\" & program.program_english_name & "_handle" & ".c")
+        s_file = handle_file.GetFile(docpath & "remote_host\" & program.program_english_name & "_handle" & ".c")
         MsgBox(s_file)
         ts = s_file.OpenAsTextStream(1, -2)
         

@@ -40,132 +40,146 @@ Partial Class env_conf_form
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(134, 22)
+        Me.TextBox1.Location = New System.Drawing.Point(201, 33)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 21)
+        Me.TextBox1.Size = New System.Drawing.Size(148, 28)
         Me.TextBox1.TabIndex = 0
-        Me.TextBox1.Text = "E:\邮储理财项目组工作\新技术\代码辅助"
+        Me.TextBox1.Text = "D:\邮储理财项目组工作\新技术\代码辅助"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(18, 25)
+        Me.Label1.Location = New System.Drawing.Point(27, 38)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(107, 12)
+        Me.Label1.Size = New System.Drawing.Size(161, 18)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "代码生成工作路径:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(18, 61)
+        Me.Label2.Location = New System.Drawing.Point(27, 92)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(83, 12)
+        Me.Label2.Size = New System.Drawing.Size(125, 18)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "远程服务器ip:"
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(134, 52)
+        Me.TextBox2.Location = New System.Drawing.Point(201, 78)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 21)
+        Me.TextBox2.Size = New System.Drawing.Size(148, 28)
         Me.TextBox2.TabIndex = 3
-        Me.TextBox2.Text = "10.136.1.3"
+        Me.TextBox2.Text = "10.136.1.143"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(18, 91)
+        Me.Label3.Location = New System.Drawing.Point(27, 136)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(47, 12)
+        Me.Label3.Size = New System.Drawing.Size(71, 18)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "用户名:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(18, 126)
+        Me.Label4.Location = New System.Drawing.Point(27, 189)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(35, 12)
+        Me.Label4.Size = New System.Drawing.Size(53, 18)
         Me.Label4.TabIndex = 5
         Me.Label4.Text = "密码:"
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(134, 88)
+        Me.TextBox3.Location = New System.Drawing.Point(201, 132)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 21)
+        Me.TextBox3.Size = New System.Drawing.Size(148, 28)
         Me.TextBox3.TabIndex = 6
         Me.TextBox3.Text = "financialsys"
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(134, 123)
+        Me.TextBox4.Location = New System.Drawing.Point(201, 184)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox4.Size = New System.Drawing.Size(100, 21)
+        Me.TextBox4.Size = New System.Drawing.Size(148, 28)
         Me.TextBox4.TabIndex = 7
         Me.TextBox4.Text = "financialsys"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(18, 167)
+        Me.Label5.Location = New System.Drawing.Point(27, 250)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(35, 12)
+        Me.Label5.Size = New System.Drawing.Size(53, 18)
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "协议:"
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(134, 158)
+        Me.TextBox5.Location = New System.Drawing.Point(201, 237)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.ReadOnly = True
-        Me.TextBox5.Size = New System.Drawing.Size(100, 21)
+        Me.TextBox5.Size = New System.Drawing.Size(148, 28)
         Me.TextBox5.TabIndex = 9
         Me.TextBox5.Text = "sftp"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(37, 227)
+        Me.Button1.Location = New System.Drawing.Point(56, 340)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(112, 34)
         Me.Button1.TabIndex = 10
         Me.Button1.Text = "保存"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(175, 227)
+        Me.Button2.Location = New System.Drawing.Point(262, 340)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(112, 34)
         Me.Button2.TabIndex = 11
         Me.Button2.Text = "关闭"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(134, 187)
+        Me.TextBox6.Location = New System.Drawing.Point(201, 280)
+        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.ReadOnly = True
-        Me.TextBox6.Size = New System.Drawing.Size(100, 21)
+        Me.TextBox6.Size = New System.Drawing.Size(148, 28)
         Me.TextBox6.TabIndex = 13
         Me.TextBox6.Text = "默认"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(18, 196)
+        Me.Label6.Location = New System.Drawing.Point(27, 294)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(59, 12)
+        Me.Label6.Size = New System.Drawing.Size(89, 18)
         Me.Label6.TabIndex = 12
         Me.Label6.Text = "远程目录:"
         '
         'env_conf_form
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.ClientSize = New System.Drawing.Size(426, 393)
         Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Button2)
@@ -180,6 +194,7 @@ Partial Class env_conf_form
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "env_conf_form"
         Me.Text = "运行环境配置"
         Me.ResumeLayout(False)

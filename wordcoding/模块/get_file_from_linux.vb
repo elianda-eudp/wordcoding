@@ -19,7 +19,7 @@
         'MsgBox(Environ("ProductName"))
 
         'cmd = "winscp.exe    /console /command " + """Option batch Continue""" + " /script=.\getpsftp.dat"
-        MsgBox(cmd)
+        'MsgBox(cmd)
         Call Shell(cmd)
         'Call Shell("winscp.exe    /console /command "Option batch Continue" /script=.\getpsftp.dat")
 

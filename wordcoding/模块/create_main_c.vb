@@ -128,8 +128,8 @@
         Dim o_flag As Integer
         o_flag = 0
         For i = 1 To program.call_method.argv_flag.Count
-            MsgBox(LCase(program.program_english_name) & " " & program.call_method.argv_flag.Count)
-            MsgBox(LCase(program.program_english_name) & " " & program.call_method.choose_flag.Item(i))
+            'MsgBox(LCase(program.program_english_name) & " " & program.call_method.argv_flag.Count)
+            'MsgBox(LCase(program.program_english_name) & " " & program.call_method.choose_flag.Item(i))
             If (program.call_method.choose_flag.Item(i) = "n") Then
 
                 'str = str & "in_set." & LCase(program.program_english_name) & "_argv_rec.index['" & program.call_method.argv_flag.Item(i) & "']"

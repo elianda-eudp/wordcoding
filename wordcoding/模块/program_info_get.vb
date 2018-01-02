@@ -503,9 +503,12 @@ Module program_info_get
             '        Call create_db_cfg.create_db_cfg(print_table)
             '    Next i
             'MsgBox("功能数" & programs.Count)
+            MsgBox(programs.Count)
+
             For i = 1 To programs.Count
                 program = programs.Item(i)
                 'MsgBox("生成数据库操作配置i=" & i)
+                shell_show("create_mian_c i=" & i, "温馨提示!")
                 Call create_db_cfg.create_db_cfg(program)
                 'MsgBox("create_h i=" & i)
                 Call create_h.create_h(program)
@@ -534,6 +537,13 @@ errorHandler:
 
         Call send_file_to_linux.send_file_to_linux()
 
+    End Sub
+    Sub shell_show(ByVal info As String, ByVal head_info As String)
+        'WsShell = CreateObject("Wscript.Shell ")
+        'WsShell.Popup(info, 1, head_info)
+        MsgBox(info,, head_info)
+
+        'MessageBoxTimeout(Globals.ThisAddIn.Application.Keyboard, info, head_info, vbExclamation, 0, 3000)
     End Sub
 
 End Module

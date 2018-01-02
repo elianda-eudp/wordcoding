@@ -134,12 +134,12 @@ Sub create_handle_c(ByVal value)
         '        Next i
         REM 打开远程下载到的文件
 
-        MsgBox(docpath & "remote_host\" & program.program_english_name & "_handle" & ".c")
+        'MsgBox(docpath & "remote_host\" & program.program_english_name & "_handle" & ".c")
         handle_file = CreateObject("Scripting.FileSystemObject")
         On Error GoTo coin_bow
 
         s_file = handle_file.GetFile(docpath & "remote_host\" & program.program_english_name & "_handle" & ".c")
-        MsgBox(s_file)
+        REM MsgBox(s_file)
         ts = s_file.OpenAsTextStream(1, -2)
         
         flag = 0
@@ -148,7 +148,7 @@ Sub create_handle_c(ByVal value)
             s = ""
             If flag <> 1 Then
                 s = ts.ReadLine
-                MsgBox(s)
+                'MsgBox(s)
             End If
             REM MsgBox s
 

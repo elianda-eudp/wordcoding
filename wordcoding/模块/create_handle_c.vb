@@ -25,6 +25,7 @@ Sub create_handle_c(ByVal value)
         If Dir(docpath, vbDirectory) = "" Then
             MkDir(docpath)
         End If
+        FileClose(1)
         FileOpen(1, docpath & program.program_english_name & "_handle" & ".c", OpenMode.Output)
 
         Print(1, "#include """ & program.program_english_name & ".h""" & vbCrLf)
@@ -141,12 +142,14 @@ Sub create_handle_c(ByVal value)
         s_file = handle_file.GetFile(docpath & "remote_host\" & program.program_english_name & "_handle" & ".c")
         REM MsgBox(s_file)
         ts = s_file.OpenAsTextStream(1, -2)
-        
+
         flag = 0
+        s = ""
 
         Do While Not ts.AtEndOfStream
-            s = ""
+
             If flag <> 1 Then
+                s = ""
                 s = ts.ReadLine
                 'MsgBox(s)
             End If
@@ -161,7 +164,7 @@ Sub create_handle_c(ByVal value)
 
                     REM copy to 1
                     If InStr(s, "coin_bow-wow to this end") > 0 Then
-                        'MsgBox s
+                        'MsgBox(s)
                         'MsgBox ts.Line
                         '                                    Print #1, s
                         flag = 1
@@ -182,7 +185,7 @@ Sub create_handle_c(ByVal value)
 
                     REM copy to 1
                     If InStr(s, "coin_bow-wow the following regional user custom code") > 0 Then
-                        '                                    MsgBox s
+                        'MsgBox(s)
                         '                                    Print #1, s
                         flag = 1
                         Exit Do

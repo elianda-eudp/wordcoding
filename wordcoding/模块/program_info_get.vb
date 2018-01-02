@@ -503,7 +503,7 @@ Module program_info_get
             '        Call create_db_cfg.create_db_cfg(print_table)
             '    Next i
             'MsgBox("功能数" & programs.Count)
-            MsgBox(programs.Count)
+            'MsgBox(programs.Count)
 
             For i = 1 To programs.Count
                 program = programs.Item(i)
@@ -539,10 +539,13 @@ errorHandler:
 
     End Sub
     Sub shell_show(ByVal info As String, ByVal head_info As String)
-        'WsShell = CreateObject("Wscript.Shell ")
-        'WsShell.Popup(info, 1, head_info)
-        MsgBox(info,, head_info)
-
+        Dim docpath As String
+        Dim cmd As String
+        docpath = env_conf.win_sys_dir
+        Call ChDrive(docpath)
+        Call ChDir(docpath)
+        cmd = docpath & "\file_bat\screem.bat"
+        Call Shell(cmd, AppWinStyle.MaximizedFocus)
         'MessageBoxTimeout(Globals.ThisAddIn.Application.Keyboard, info, head_info, vbExclamation, 0, 3000)
     End Sub
 

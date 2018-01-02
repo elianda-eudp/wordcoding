@@ -157,5 +157,12 @@
         'Print(15, "putty.exe -l " & env_conf.linux_user & " -pw " & env_conf.linux_password & " " & env_conf.linux_ip & vbCrLf)
         Print(15, "" & vbCrLf)
         FileClose(15)
+
+
+        FileOpen(15, docpath & "file_bat\screem.bat", OpenMode.Output)
+
+        'Print(15, "cd C:\Program Files (x86)\WinSCP" & vbCrLf)
+        Print(15, "type " & env_conf.win_work_path & "\src\*.c" & vbCrLf)
+        FileClose(15)
     End Sub
 End Module
